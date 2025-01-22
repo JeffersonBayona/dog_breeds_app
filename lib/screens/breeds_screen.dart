@@ -137,7 +137,15 @@ class _BreedsScreenState extends State<BreedsScreen> {
                                     color: Colors.grey,
                                   ),
                             title: Text(breed.name),
-                            subtitle: Text(breed.breedGroup ?? 'Sin grupo'),
+                            subtitle: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                    'Grupo: ${breed.breedGroup ?? 'Desconocido'}'),
+                                Text(
+                                    'Edad: ${breed.lifeSpan ?? 'Desconocido'}'),
+                              ],
+                            ),
                             trailing: IconButton(
                               icon: Icon(
                                 breed.isFavorite

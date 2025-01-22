@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
-            label: 'Favoritos',
+            label: 'Razas Favoritas',
           ),
         ],
       ),
